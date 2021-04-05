@@ -8,11 +8,11 @@ function setup() {
 function draw() {
 
   if (mouseIsPressed) {
-  stroke(map(mouseX, 0, 600, 0, 255, true))
-  polygon(width - mouseX, height - mouseY, 20, 6);
-  polygon(mouseX, mouseY, 20, 6);
-  polygon(width - mouseX, height - mouseY, 15, 6);
-  polygon(mouseX, mouseY, 15, 6);
+    stroke(map(mouseX, 0, 600, 0, 255, true))
+    polygon(width - mouseX, height - mouseY, 20, 6);
+    polygon(mouseX, mouseY, 20, 6);
+    polygon(width - mouseX, height - mouseY, 15, 6);
+    polygon(mouseX, mouseY, 15, 6);
   }
 
 }
@@ -28,10 +28,12 @@ function polygon(x, y, radius, npoints) {
   endShape(CLOSE);
 }
 
-function keyTyped(){
+function keyTyped() {
 
-  if (key == 's'){
-    console.log(`Key s is being Typed`)
+  console.log(`Key ${key} is being Typed`)
+
+  if (key == 's') {
+
   }
 
   return false;
