@@ -43,7 +43,11 @@ function keyTyped() {
   } else if (key == `d`){
     //display Image
 
-    polygon(array[0][0], array[0][1], array[1][0], array[1][1]);
+    for(let i = 0; i < array.length - 1; i++){
+          polygon(array[i][0], array[i][1], array[i + 1][0], array[i + 1][1]);
+    }
+
+
   }
   if (key == 'c'){
   clear();
