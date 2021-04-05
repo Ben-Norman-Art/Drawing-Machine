@@ -28,7 +28,7 @@ function polygon(x, y, radius, npoints) {
   endShape(CLOSE);
 }
 
-funcion keyTyped(){
+function keyTyped(){
 
   if (key == 's'){
     console.log(`Key s is being Typed`)
