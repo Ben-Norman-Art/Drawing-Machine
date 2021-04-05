@@ -40,7 +40,8 @@ function keyTyped() {
     saveCanvas(`fileName`, `png`);
   } else if (key == `d`){
     //display Image
-    console.log(array[0]);
+
+    polygon(array[0][0], array[0][1], array[1][0], array[1][1]);
   }
   if (key == 'c'){
   clear();
