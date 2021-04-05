@@ -40,7 +40,7 @@ function keyTyped() {
     saveCanvas(`fileName`, `png`);
   } else if (key == `d`){
     //display Image
-    console.log(array);
+    console.log(array[0]);
   }
   if (key == 'c'){
   clear();
