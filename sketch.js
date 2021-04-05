@@ -11,6 +11,8 @@ function draw() {
 
   if (mouseIsPressed) {
     stroke(600, map(mouseX, 0, 600, 0, 255, true), 0)
+    let c = (map(mouseX, 0, 600, 0, 255, true))
+    fill(c)
     polygon(width - mouseX, height - mouseY, 20, 6);
     polygon(mouseX, mouseY, 20, 6);
     polygon(width - mouseX, height - mouseY, 15, 6);
