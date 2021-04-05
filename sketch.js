@@ -8,7 +8,7 @@ function setup() {
 function draw() {
 
   if (mouseIsPressed) {
-    stroke(map(mouseX, 0, 600, 0, 255, true))
+    stroke(255, map(mouseX, 0, 600, 0, 600, true), 0)
     polygon(width - mouseX, height - mouseY, 20, 6);
     polygon(mouseX, mouseY, 20, 6);
     polygon(width - mouseX, height - mouseY, 15, 6);
@@ -36,6 +36,11 @@ function keyTyped() {
     // save this image
     saveCanvas(`fileName`, `png`);
   }
+  if (key == 'c'){
+  clear();
+  background(220);
+  }
+
 
   return false;
 }
