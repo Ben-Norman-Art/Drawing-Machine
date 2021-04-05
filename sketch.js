@@ -8,7 +8,7 @@ function setup() {
 function draw() {
 
   if (mouseIsPressed) {
-    stroke(600, map(mouseX, 0, 255, 0, 600, true), 0)
+    stroke(600, map(mouseX, 0, 600, 0, 255, true), 0)
     polygon(width - mouseX, height - mouseY, 20, 6);
     polygon(mouseX, mouseY, 20, 6);
     polygon(width - mouseX, height - mouseY, 15, 6);
