@@ -30,10 +30,11 @@ function polygon(x, y, radius, npoints) {
 
 function keyTyped() {
 
-  console.log(`Key ${key} is being Typed`)
+  //console.log(`Key ${key} is being Typed`)
 
   if (key == 's') {
-
+    // save this image
+    saveCanvas(`fileName`, `png`);
   }
 
   return false;
