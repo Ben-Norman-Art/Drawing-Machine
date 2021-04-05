@@ -17,6 +17,10 @@ function draw() {
     polygon(mouseX, mouseY, 20, 6);
     polygon(width - mouseX, height - mouseY, 15, 6);
     polygon(mouseX, mouseY, 15, 6);
+    polygon(height - mouseX, width - mouseY, 20, 6);
+    polygon(width + mouseX, height + mouseY, 20, 6);
+    polygon(height - mouseX, width - mouseY, 15, 6);
+    polygon(height + mouseX, width + mouseY, 15, 6);
     array.push([mouseX, mouseY]);
   }
 
