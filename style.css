@@ -12,6 +12,11 @@ h1 {
   font-size: 50px;
   text-align: center;
 }
+h2 {
+  font-family: bahnschrift;
+  font-size: 50px;
+  text-align: center;
+}
 p {
   font-family: bahnschrift;
   font-size: 20px;

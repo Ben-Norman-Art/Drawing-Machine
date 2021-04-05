@@ -1,3 +1,5 @@
+let array = [];
+
 function setup() {
   createCanvas(600, 600);
   background(220);
@@ -13,6 +15,7 @@ function draw() {
     polygon(mouseX, mouseY, 20, 6);
     polygon(width - mouseX, height - mouseY, 15, 6);
     polygon(mouseX, mouseY, 15, 6);
+    array.push([mousex, mouseY])
   }
 
 }
@@ -35,6 +38,9 @@ function keyTyped() {
   if (key == 's') {
     // save this image
     saveCanvas(`fileName`, `png`);
+  } else if (key == `d`){
+    //display Image
+    console.log(array);
   }
   if (key == 'c'){
   clear();
