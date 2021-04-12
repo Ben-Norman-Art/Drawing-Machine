@@ -1,7 +1,7 @@
 let array = [];
 
 function setup() {
- createCanvas(windowWidth, windowHeight);
+ createCanvas(400, 400);
  background(220);
 
   strokeWeight(1);
@@ -44,7 +44,7 @@ function keyTyped(){
 
   if (key == 's'){
   saveCanvas(`fileName`, `png`);
-  } 
+  }
   if (key == 'c'){
   clear();
   background(220);
