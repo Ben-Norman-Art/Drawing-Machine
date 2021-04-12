@@ -26,7 +26,7 @@ function setup() {
 function draw() {
 
   if (mouseIsPressed) {
-  stroke(0, 10)
+  stroke(0, 0)
   let c = color(map(mouseX, 0, 900, 0, 255, true))
   noFill()
   square1(width - mouseX, height - mouseY, 20, 6);
@@ -90,5 +90,5 @@ function keyTyped(){
 }
 
 function square1() {
-  rect(mouseX, mouseY, 10, 10);
+  rect(mouseX, mouseY, 20, 20);
 }
