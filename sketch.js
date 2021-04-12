@@ -1,10 +1,26 @@
 let array = [];
+let input;
+let img;
+let canvas;
+let imgAdd;
+let imgSave;
+let imgReset;
+let reX;
 
 function setup() {
  createCanvas(400, 400);
  background(220);
 
   strokeWeight(1);
+
+  input = createFileInput(handleFile);
+  input.parent('upload-button');
+
+  imgAdd = createButton('Add Image To Canvas');
+  imgAdd.parent('imgAdd-button');
+  imgAdd.mousePressed(addImage);
+
+
 }
 
 function draw() {
@@ -26,7 +42,25 @@ function draw() {
 }
 
 }
+function handleFile(file) {
+  print(file);
+  if (file.type === 'image') {
+    img = createImg(file.data, '');
+    img.hide();
+  } else {
+    img = null;
+  }
+}
 
+
+//Function for drawing the image onto the canvas.
+function addImage() {
+  reX = (img.width) / (img.height);
+  resizeCanvas(reX*500, 500);
+  if (img) {
+    image(img, 0, 0, width, height);
+  }
+}
 function polygon(x, y, radius, npoints) {
   let angle = TWO_PI / npoints;
   beginShape();
