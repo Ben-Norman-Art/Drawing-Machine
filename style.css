@@ -5,7 +5,7 @@ html, body {
 canvas {
   margin: auto;
   display: block;
-  border: 5px, solid black;
+  border: 10px, solid black;
 }
 h1 {
   font-family: bahnschrift;
