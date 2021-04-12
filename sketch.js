@@ -1,28 +1,26 @@
-let array = [];
-
 function setup() {
-  createCanvas(600, 600);
-  background(220);
+ createCanvas(windowWidth, windowHeight);
+ background(220);
 
-  strokeWeight(2);
+  strokeWeight(1);
 }
 
 function draw() {
 
-  if (mouseIsPressed) {
-    stroke(600, map(mouseX, 0, 600, 0, 255, true), 0)
-    let c = (map(mouseX, 0, 600, 0, 255, true))
-    fill(c)
-    polygon(width - mouseX, height - mouseY, 20, 6);
-    polygon(mouseX, mouseY, 20, 6);
-    polygon(width - mouseX, height - mouseY, 15, 6);
-    polygon(mouseX, mouseY, 15, 6);
-    polygon(height - mouseX, width - mouseY, 20, 6);
-    polygon(width + mouseX, height + mouseY, 20, 6);
-    polygon(height - mouseX, width - mouseY, 15, 6);
-    polygon(height + mouseX, width + mouseY, 15, 6);
-    array.push([mouseX, mouseY]);
-  }
+  if (mouseIsPressed == true) {
+  stroke(0, 10)
+  let c = color(map(mouseX, 0, 900, 0, 255, true))
+  noFill()
+  square1(width - mouseX, height - mouseY, 20, 6);
+  square1(mouseX, mouseY, 20, 6);
+  square1(width - mouseX, height - mouseY, 15, 6);
+  square1(mouseX, mouseY, 15, 6);
+  square1(height - mouseX, width - mouseY, 20, 6);
+  square1(width + mouseX, height + mouseY, 20, 6);
+  square1(height - mouseX, width - mouseY, 15, 6);
+  square1(height + mouseX, width + mouseY, 15, 6);
+
+}
 
 }
 
@@ -37,19 +35,22 @@ function polygon(x, y, radius, npoints) {
   endShape(CLOSE);
 }
 
-function keyTyped() {
+function keyTyped(){
 
-  //console.log(`Key ${key} is being Typed`)
+  //console.log(`Key s is being Typed`)
 
-  if (key == 's') {
-    // save this image
-    saveCanvas(`fileName`, `png`);
-  } 
-  if (key == 'c') {
-    clear();
-    background(220);
+  if (key == 's'){
+  saveCanvas(`fileName`, `png`);
+  }
+  if (key == 'c'){
+  clear();
+  background(220);
   }
 
 
   return false;
+}
+
+function square1() {
+  rect(mouseX, mouseY, 5, 5);
 }
