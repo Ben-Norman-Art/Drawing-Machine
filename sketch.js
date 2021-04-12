@@ -52,5 +52,5 @@ function keyTyped(){
 }
 
 function square1() {
-  rect(mouseX, mouseY, 5, 5);
+  rect(mouseX, mouseY, 10, 10);
 }
