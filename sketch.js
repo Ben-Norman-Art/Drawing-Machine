@@ -1,3 +1,5 @@
+
+
 function setup() {
  createCanvas(windowWidth, windowHeight);
  background(220);
@@ -7,18 +9,19 @@ function setup() {
 
 function draw() {
 
-  if (mouseIsPressed == true) {
-  stroke(0, 10)
-  let c = color(map(mouseX, 0, 900, 0, 255, true))
-  noFill()
-  square1(width - mouseX, height - mouseY, 20, 6);
-  square1(mouseX, mouseY, 20, 6);
-  square1(width - mouseX, height - mouseY, 15, 6);
-  square1(mouseX, mouseY, 15, 6);
-  square1(height - mouseX, width - mouseY, 20, 6);
-  square1(width + mouseX, height + mouseY, 20, 6);
-  square1(height - mouseX, width - mouseY, 15, 6);
-  square1(height + mouseX, width + mouseY, 15, 6);
+  if (mouseIsPressed) {
+  //stroke(0, 10)
+  //let c = color(map(mouseX, 0, 900, 0, 255, true))
+  //noFill()
+  //square1(width - mouseX, height - mouseY, 20, 6);
+  //square1(mouseX, mouseY, 20, 6);
+  //square1(width - mouseX, height - mouseY, 15, 6);
+  //square1(mouseX, mouseY, 15, 6);
+  //square1(height - mouseX, width - mouseY, 20, 6);
+  //square1(width + mouseX, height + mouseY, 20, 6);
+  //square1(height - mouseX, width - mouseY, 15, 6);
+  //square1(height + mouseX, width + mouseY, 15, 6);
+  array.push([mouseX, mouseY]);
 
 }
 
@@ -57,5 +60,8 @@ function keyTyped(){
 }
 
 function square1() {
+  stroke(0, 10)
+  let c = color(map(mouseX, 0, 900, 0, 255, true))
+  noFill()
   rect(mouseX, mouseY, 10, 10);
 }
