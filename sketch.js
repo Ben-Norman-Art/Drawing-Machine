@@ -50,8 +50,8 @@ function keyTyped(){
   background(220);
 } else if (key === 'd'){
 
-  for(let i = 0; i < array.lenght; i++){
-    square1(array [i][0], array [i][1], array [i+ 1][0], array [i + 1][1]));
+  for(let i = 0; i < array.length; i++){
+    square1(array [i][0], array [i][1], array [i+ 1][0], array [i + 1][1]);
   }
 }
 
