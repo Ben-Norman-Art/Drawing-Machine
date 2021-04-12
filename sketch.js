@@ -26,7 +26,7 @@ function setup() {
 function draw() {
 
   if (mouseIsPressed) {
-  stroke(50)
+  stroke(0, 100)
   let c = color(map(mouseX, 0, 900, 0, 255, true))
   noFill()
   square1(width - mouseX, height - mouseY, 20, 6);
