@@ -1,4 +1,4 @@
-
+let array = [];
 
 function setup() {
  createCanvas(windowWidth, windowHeight);
