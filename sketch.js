@@ -90,5 +90,5 @@ function keyTyped(){
 }
 
 function square1() {
-  rect(mouseX, mouseY, 20, 20);
+  rect(mouseX, mouseY, 10, 10);
 }
