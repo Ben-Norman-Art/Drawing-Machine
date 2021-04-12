@@ -1,7 +1,7 @@
 let array = [];
 
 function setup() {
- createCanvas(windowWidth, windowHeight);
+ createCanvas(400, 400);
  background(220);
 
   strokeWeight(1);
@@ -61,7 +61,6 @@ function keyTyped(){
 
 function square1() {
   stroke(0, 10)
-  let c = color(map(mouseX, 0, 900, 0, 255, true))
   noFill()
   rect(mouseX, mouseY, 10, 10);
 }
