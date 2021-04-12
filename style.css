@@ -4,7 +4,9 @@ html, body {
 }
 canvas {
   margin: auto;
-  display: block;
+  top: 0;
+  left: 0;
+  position: absolute;
   border: 5px solid black;
   padding: 20px;
 }
