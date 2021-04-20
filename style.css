@@ -3,7 +3,7 @@ html, body {
   padding: 0;
 }
 canvas {
-  margin: auto;
+  margin: right;
   display: block;
   border: 5px, solid black;
   padding: 20px;
@@ -11,28 +11,28 @@ canvas {
 h1 {
   font-family: bahnschrift;
   font-size: 50px;
-  text-align: center;
+  text-align: left;
 }
 h2 {
   font-family: bahnschrift;
   font-size: 20px;
-  text-align: center;
+  text-align: left;
 }
 p {
   font-family: bahnschrift;
   font-size: 20px;
-  text-align: center;
+  text-align: left;
 }
 input {
   display: block;
-  margin: auto;
+  margin: left;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
 button {
   display: block;
-  margin: auto;
+  margin: left;
   margin-top: 20px;
   margin-bottom: 20px;
 }
