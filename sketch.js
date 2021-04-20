@@ -31,7 +31,7 @@ function draw() {
     noStroke();
     fill(c);
     rectMode(CENTER);
-    rect(mouseX, mouseY, 25, 25);
+    rect(mouseX, mouseY, 15, 15);
   }
 }
 }
@@ -52,7 +52,7 @@ function keyTyped() {
     clear();
     background(220);
   }
-
+ 
 
 
   return false;

@@ -1,38 +1,49 @@
-html, body {
+html,
+body {
   margin: 0;
-  padding: 0;
+  padding
 }
+
 canvas {
-  margin: right;
+  margin: auto;
   display: block;
-  border: 5px, solid black;
-  padding: 20px;
+  border: 10px;
+  border-style: solid;
 }
+
 h1 {
   font-family: bahnschrift;
-  font-size: 50px;
-  text-align: left;
+  font-size: 45px;
+  color: white;
+  text-align: center;
+  padding: 5px;
 }
+
 h2 {
+  display: flex;
+  flex-wrap: wrap;
   font-family: bahnschrift;
   font-size: 20px;
-  text-align: left;
+  text-align: center;
 }
+
 p {
+  color: white;
   font-family: bahnschrift;
   font-size: 20px;
-  text-align: left;
+  text-align: center;
 }
+
 input {
   display: block;
-  margin: left;
+  margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
 button {
   display: block;
-  margin: left;
+  margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
 }
