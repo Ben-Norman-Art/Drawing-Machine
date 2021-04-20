@@ -31,7 +31,7 @@ function draw() {
     noStroke();
     fill(c);
     rectMode(CENTER);
-    rect(mouseX, mouseY, 15, 15);
+    rect(mouseX, mouseY, 25, 25);
   }
 }
 }
@@ -52,7 +52,7 @@ function keyTyped() {
     clear();
     background(220);
   }
- 
+
 
 
   return false;
@@ -71,7 +71,7 @@ function handleFile(file) {
 function addImage() {
   reX = (img.width) / (img.height);
   resizeCanvas(reX * 500, 500);
-  if (img) 
+  if (img)
   img.resize(width + 2 ,0);
   {
     image(img, 0, 0, width, height);
